@@ -113,7 +113,3 @@ def test_it_adds_task_along_side_diary_entries():
 # It returns a list of all the mobile phone numbers in all diary entries 
 
 def test_it_adds_contacts_mobile_number_and_return_a_list():
-
-As a user
-So that I can keep track of my contacts
-I want to see a list of all of the mobile phone numbers in all my diary entries

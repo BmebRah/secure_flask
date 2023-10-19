@@ -1,10 +1,13 @@
 class Diary():
-    def __init__(self, title, contents):
+    def __init__(self, title, contents, task, task_content):
         self.title=title
         self.contents=contents
         self.entries = {}
+        self.task=task
+        self.task_content=task_content
     def add_entries(self):
         self.entries[self.title] = self.contents
+        self.entries[self.task] = self.task_content
         return self.entries 
         
     def read_entries(self):

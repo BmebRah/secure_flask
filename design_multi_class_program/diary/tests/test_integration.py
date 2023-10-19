@@ -5,11 +5,8 @@ from lib.todo import *
 # It adds task to diary
 
 def test_it_adds_task_to_diary():
-    instance = TODO("task1")
-
-
-# Given a string of contacts and mobile phone number 
-# It returns a list of all the mobile phone numbers in all diary entries 
-
-
-
+    instance = TODO("mobile")
+    task1 = Diary("title", "contents", "task", "task_content").add_entries()
+    result = instance.add_task("mobile")
+    assert result == ["mobile"]
+    
